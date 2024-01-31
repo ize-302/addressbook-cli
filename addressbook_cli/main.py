@@ -1,9 +1,9 @@
 import typer
 from rich.console import Console
 from typing_extensions import Annotated
-from db import cursor, conn
+from addressbook_cli.db import cursor, conn
 from typing import List
-from utils import render_rows
+from addressbook_cli.utils import render_rows
 
 app = typer.Typer()
 console = Console()
